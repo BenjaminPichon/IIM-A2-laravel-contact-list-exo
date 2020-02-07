@@ -51,7 +51,7 @@ class ContactController extends Controller
         $contact->user_id =auth()->user()->id;
         $contact->save();
 
-        return redirect()->route('contacts.show');
+        return redirect()->route('contacts.index');
     }
 
     /**
